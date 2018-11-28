@@ -40,6 +40,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
 }
 #footer {
   background-color: #444;
@@ -72,17 +75,16 @@ nav h1 a {
   padding: 0 2.3rem;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
     list-style: none;
-    background-color: #eee;
-    font-size: 17px;
+    background-color: #eee;    
     margin: 0;
-    width: calc(50% - 80px);
+    width: 100%;
 }
 
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
+    font-size: 1.8rem;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -96,6 +98,7 @@ nav h1 a {
 #breadcrumb li a {
     color: #0275d8;
     text-decoration: none;
+    padding: .8rem;
 }
 
 /* Add a color on mouse-over */
@@ -177,14 +180,14 @@ nav h1 a {
 }
 #restaurants-list p {
   margin: 0 8px;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin: 10px 8px 8px;
   padding: 8px 30px 10px;
   text-align: center;
@@ -198,6 +201,12 @@ nav h1 a {
   top: 0;
   width: 100%;
   z-index: 1000;
+}
+
+.inside nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
