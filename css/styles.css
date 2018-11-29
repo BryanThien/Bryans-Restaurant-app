@@ -40,9 +40,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
-
 }
 #footer {
   background-color: #444;
@@ -79,6 +76,7 @@ nav h1 a {
     background-color: #eee;    
     margin: 0;
     width: 100%;
+    padding: 0 1rem;
 }
 
 /* Display list items side by side */
@@ -89,7 +87,7 @@ nav h1 a {
 
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
-    padding: 8px;
+    padding: 8px 8px 8px 0;
     color: black;
     content: "/\00a0";
 }
@@ -108,7 +106,7 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 40rem;
+  height: 25rem;
   width: 100%;
   background-color: #ccc;
 }
@@ -199,8 +197,9 @@ nav h1 a {
 .inside header {
   position: fixed;
   top: 0;
+  left:0;
   width: 100%;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .inside #maincontent {
