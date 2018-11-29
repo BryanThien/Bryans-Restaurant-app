@@ -42,6 +42,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 15rem;
 
 }
 #footer {
@@ -210,11 +211,8 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+  height: 30rem;
+  width: 30rem;
 }
 .inside #map {
   background-color: #ccc;
