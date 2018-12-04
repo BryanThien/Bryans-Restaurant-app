@@ -44,7 +44,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #footer {
   background-color: #444;
   color: #aaa;
-  font-size: 8pt;
+  font-size: 1rem;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
@@ -222,9 +222,9 @@ nav h1 a {
   width: 100%;
 }
 .inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 50%;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
 }
 #restaurant-name {
   color: #f18200;
@@ -258,11 +258,14 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 0 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 3rem 4rem 8rem;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -291,4 +294,9 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+  font-size: 1.6rem;
+}
+
+p:first-child{
+  padding-top: 1.5rem;
 }
