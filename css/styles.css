@@ -157,14 +157,14 @@ nav h1 a {
   min-height: 380px;
   padding: 0 ;
   text-align: left;
-  width: 96%;
+  width: 100%;
+  max-width:43rem;
 }
 #restaurants-list .restaurant-img {
   display: block;
   margin: auto;
-  max-width: 100%;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  max-width: 43rem;
 }
 #restaurants-list li h1 {
   color: #f18200;
@@ -237,7 +237,9 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 90%;
+  width: 100%;
+  height: auto;
+  max-width: 43rem;
 }
 #restaurant-address {
   font-size: 12pt;
@@ -253,7 +255,8 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: 100%;
+  max-width: 43rem;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
