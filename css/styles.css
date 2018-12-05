@@ -214,7 +214,7 @@ nav h1 a {
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 30rem;
-  width: 32rem;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
@@ -265,7 +265,7 @@ nav h1 a {
   margin: 0;
 }
 #reviews-container {
-  padding: 3rem 4rem 8rem;
+  padding: 3rem 2rem 8rem;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -291,6 +291,7 @@ nav h1 a {
 }
 #reviews-list li p {
   margin: 0 0 10px;
+  font-size: 1.6rem;
 }
 #restaurant-hours td {
   color: #666;
