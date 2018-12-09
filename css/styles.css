@@ -223,6 +223,9 @@ nav h1 a {
   height: 30rem;
   width: 100%;
 }
+#map-container {
+  width:100%;
+}
 .inside #map {
   background-color: #ccc;
   height: 100%;
