@@ -59,7 +59,7 @@ self.addEventListener('fetch', e => {
             }
             else {
                 console.log("Could not find ", e.request, " in cache, fetching!");
-                return fetch(e.request)
+                return fetch(e.request,{ignoreSearch:false})
                 .then(response => {
                     const clonedResponse = response.clone();
                     caches.open(cacheName).then(cache => {
